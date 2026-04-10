@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Sehat Modern | Pelayanan Terpadu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>🏥 Klinik kesehatan</h1>
+            <p>Memberikan Solusi Kesehatan Terbaik untuk Keluarga Anda</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#registrasi">Pendaftaran</a></li>
+            <li><a href="#produk-dinamis">Katalog Medis</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="layanan">
+            <h2 class="section-title">Layanan Unggulan</h2>
+            <div class="card-grid">
+                <div class="info-card">
+                    <div class="icon">🩺</div>
+                    <h3>Poli Umum</h3>
+                    <p>Konsultasi medis menyeluruh dengan dokter berpengalaman.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🦷</div>
+                    <h3>Poli Gigi</h3>
+                    <p>Perawatan estetika dan kesehatan gigi dengan teknologi modern.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🔬</div>
+                    <h3>Laboratorium</h3>
+                    <p>Cek kesehatan mendalam dengan hasil akurat dan terpercaya.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registrasi">
+            <h2 class="section-title">Formulir Pendaftaran Pasien</h2>
+            <div class="form-container">
+                <form id="formRegistrasi" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" id="nama" placeholder="Contoh: Nazua Safira">
+                            <span class="error-msg" id="errorNama"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Aktif</label>
+                            <input type="email" id="email" placeholder="nama@email.com">
+                            <span class="error-msg" id="errorEmail"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nomor Telepon</label>
+                            <input type="number" id="telepon" placeholder="08xxxxxxxxxx">
+                            <span class="error-msg" id="errorTelepon"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Spesialis Tujuan</label>
+                            <select id="dokter">
+                                <option value="">-- Pilih Spesialis --</option>
+                                <option value="Umum">Dokter Umum</option>
+                                <option value="Gigi">Dokter Gigi</option>
+                                <option value="Anak">Spesialis Anak</option>
+                            </select>
+                            <span class="error-msg" id="errorDokter"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-flex">
+                            <label class="radio-item"><input type="radio" name="jk" value="L"> Laki-laki</label>
+                            <label class="radio-item"><input type="radio" name="jk" value="P"> Perempuan</label>
+                        </div>
+                        <span class="error-msg" id="errorJk"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Konfirmasi Pendaftaran</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="produk-dinamis">
+            <h2 class="section-title">Katalog Produk & Farmasi</h2>
+            <div class="add-box">
+                <input type="text" id="inputNamaProduk" placeholder="Nama Barang/Jasa">
+                <input type="number" id="inputHargaProduk" placeholder="Harga (Rp)">
+                <button id="btnTambahProduk" class="btn-add">Tambah</button>
+            </div>
+            <div id="daftarItemContainer" class="card-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Klinik Sehat Modern. Dibuat untuk Keperluan Praktikum.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
